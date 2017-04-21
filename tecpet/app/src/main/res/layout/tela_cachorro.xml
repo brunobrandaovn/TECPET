@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="engnetconsultoria.tecpet.TelaCachorro"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtPesquisarRaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pesquisarRaca"
+        android:theme="@style/textosTitulos" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actvCachorro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Digite a raça" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        style="@style/botaoTecPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todas as raças"
+        android:theme="@style/textosTitulos" />
+
+    <Button
+        android:id="@+id/btnTodasRacas"
+        style="@style/botaoTecPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todas as raças" />
+
+</LinearLayout>

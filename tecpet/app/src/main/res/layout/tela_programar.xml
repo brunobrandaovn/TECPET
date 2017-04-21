@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context="engnetconsultoria.tecpet.TelaProgramar"
+    android:orientation="vertical"
+    android:background="#E6E7FA"
+    android:weightSum="1">
+
+    <TimePicker
+        android:id="@+id/tmProgramar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:headerBackground="@color/TecPetAzulEscuro"
+        android:numbersSelectorColor="@color/TecPetAzulEscuro" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18" />
+
+    <Button
+        android:id="@+id/btnProgramarHorario"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:background="@color/TecPetAzulEscuro"
+        android:text="Programar"
+        android:textColor="#fff" />
+
+</LinearLayout>

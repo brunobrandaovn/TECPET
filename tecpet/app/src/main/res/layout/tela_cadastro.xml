@@ -7,18 +7,30 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="#5BA5E8"
-    tools:context="engnetconsultoria.tecpet.TelaCadastro">
-
-
+    tools:context="engnetconsultoria.tecpet.TelaCadastro"
+    android:weightSum="1">
 
 
     <EditText
-        android:id="@+id/editEmail2"
-        android:layout_width="248dp"
+        android:id="@+id/editNome"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:background="#FFF"
         android:ems="10"
-        android:hint="usuário"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="274dp"
+        android:layout_weight="0.01" />
+
+    <EditText
+        android:id="@+id/editEmail2"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:background="#FFF"
+        android:ems="10"
+        android:hint="Usuário"
         android:inputType="textPersonName"
         android:padding="10dp"
         tools:layout_editor_absoluteX="68dp"
@@ -26,11 +38,11 @@
 
     <EditText
         android:id="@+id/editSenha2"
-        android:layout_width="248dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:background="#FFF"
         android:ems="10"
-        android:hint="senha"
+        android:hint="Senha"
         android:inputType="textPassword"
         android:padding="10dp"
         tools:layout_editor_absoluteX="68dp"
@@ -38,19 +50,24 @@
 
     <EditText
         android:id="@+id/editConfirmaSenha"
-        android:layout_width="248dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:background="#FFF"
         android:ems="10"
-        android:hint="confirma senha"
+        android:hint="Confirma senha"
         android:inputType="textPassword"
         android:padding="10dp"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="324dp"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07" />
+
     <Button
         android:id="@+id/btnCadastrar"
-        android:layout_width="248dp"
+        android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="#064975"
         android:text="Cadastrar"

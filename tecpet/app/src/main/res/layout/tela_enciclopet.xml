@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context="engnetconsultoria.tecpet.TelaEnciclopet"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtEnciclopet"
+        android:layout_width="349dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEE"
+        android:padding="5pt"
+        android:text="@string/enciclopet"
+        android:textSize="7pt"
+        tools:layout_editor_absoluteX="18dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtEscolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Escolha o animal"
+        android:textSize="20pt"
+        android:textColor="@color/TecPetAzulEscuro"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnCachorro"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Cachorro"
+        android:textColor="#FFF"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="362dp"
+        android:layout_marginTop="8dp"
+         />
+
+    <Button
+        android:id="@+id/btnGato"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Gato"
+        android:textColor="#FFF"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="362dp"
+        android:layout_marginTop="8dp"
+        />
+
+</LinearLayout>
