@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class TelaCadastro extends AppCompatActivity {
 
-    EditText editEmail2, editSenha2, editConfirmaSenha;
+    EditText editEmail2, editSenha2, editConfirmaSenha, editNome;
     Button btnCadastrar;
     TextView textTelaCadastro;
 
@@ -29,6 +29,7 @@ public class TelaCadastro extends AppCompatActivity {
 
         editEmail2 = (EditText)findViewById(R.id.editEmail2);
         editSenha2 = (EditText)findViewById(R.id.editSenha2);
+        editNome = (EditText) findViewById(R.id.editNome);
         editConfirmaSenha = (EditText)findViewById(R.id.editConfirmaSenha);
         btnCadastrar = (Button)findViewById(R.id.btnCadastrar);
         textTelaCadastro = (TextView)findViewById(R.id.textTelaCadastro);
@@ -47,16 +48,17 @@ public class TelaCadastro extends AppCompatActivity {
 
                     String email = editEmail2.getText().toString();
                     String senha = editSenha2.getText().toString();
+                    String nome =  editNome.getText().toString();
                     String confirmaSenha = editConfirmaSenha.getText().toString();
 
 
-                    if(email.isEmpty() || senha.isEmpty()){
+                    if(email.isEmpty() || senha.isEmpty() || nome.isEmpty() || confirmaSenha.isEmpty()){
                         Toast.makeText(getApplicationContext(), "Nenhum campo pode estar vazio.", Toast.LENGTH_LONG).show();
                     }
                     else{
                         url = "http://engnetconsultoria.com.br/app/tecpet/login/cadastro.php";
 
-                        parametrosUsuario = "email="+ email + "&senha=" + senha;
+                        parametrosUsuario = "nome="+ nome +"&email="+ email + "&senha=" + senha;
 
                         new TelaCadastro.SolicitaDados().execute(url);
                     }
@@ -64,9 +66,6 @@ public class TelaCadastro extends AppCompatActivity {
                     //erro ao conectar
                     Toast.makeText(getApplicationContext(), "Nenhuma aplicação foi detectada.", Toast.LENGTH_LONG).show();
                 }
-
-
-
             }
         });
         //clicar p/ voltar
@@ -77,10 +76,7 @@ public class TelaCadastro extends AppCompatActivity {
                 startActivity(abreLogin);
             }
         });
-
-
     }
-
     private class SolicitaDados extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... urls){
