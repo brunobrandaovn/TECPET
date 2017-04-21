@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">TECPET</string>
+    <string name="app_name">TecPet</string>
+    <string name="title_activity_enciclopet">Enciclopet</string>
+    <string name="enciclopet">O Enciclopet é um almanaque composto com todas as raças de cachorro e
+        gato, onde é possível obter algumas informações para melhor cuidado do seu pet.</string>
+    <string name="pesquisarRaca">Pesquisar por raça</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

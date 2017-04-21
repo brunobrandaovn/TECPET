@@ -7,11 +7,38 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Botão Azul Escuro-->
+    <style name="botaoTecPet">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@color/TecPetAzulEscuro</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+
+    <!-- Textos h2-->
+    <style name="textosTitulos">
+        <item name="android:textColor">@color/TecPetAzulEscuro</item>
+        <item name="android:textSize">14pt</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!--Inputs Texts-->
+    <style name="inputs">
+        <item name="android:background">#FFF</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
 </resources>
+
+
+
